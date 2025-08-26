@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Falling Shapes</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <div id="hud">
+                <div class="stats">
+                    <label>Count:</label>
+                    <input id="count" readonly />
+                    <label>Area (px²):</label>
+                    <input id="area" readonly />
+                </div>
+            </div>
+
+            <div id="stage-wrapper">
+                <div id="stage"></div>
+            </div>
+
+            <div id="controls">
+                <div class="control">
+                    <span>Spawn rate (shapes/s):</span>
+                    <button id="rate-dec">−</button>
+                    <input id="rate" readonly />
+                    <button id="rate-inc">+</button>
+                </div>
+                <div class="control">
+                    <span>Gravity (px/s²):</span>
+                    <button id="g-dec">−</button>
+                    <input id="gravity" readonly />
+                    <button id="g-inc">+</button>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>

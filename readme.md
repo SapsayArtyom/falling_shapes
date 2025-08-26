@@ -1,4 +1,4 @@
-# Node 18+ (или 20+)
+# Node 18+ (or 20+)
 npm i
 npm run dev
 
